@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "logistic-regression"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "logistic_regression"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.24.2"
+matplotlib = "^3.7.1"
+h5py = "^3.8.0"
+
+[tool.poetry.scripts]
+run = "logistic_regression.run:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
